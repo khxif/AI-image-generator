@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@layer components {
+    .input{
+        @apply w-20 md:w-auto flex-1 py-4 px-2 outline-none rounded-3xl
+    }
+    .button{
+        @apply flex-1 border text-white dark:border-white py-3 rounded-xl hover:bg-white hover:text-black transition-colors 
+        duration-300 font-bold
+    }
+    .buttons{
+        @apply flex-1 py-3 rounded-3xl bg-black outline-1 outline font-bold outline-white
+    }
+}
