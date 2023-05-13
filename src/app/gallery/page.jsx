@@ -1,5 +1,5 @@
 import Card from "@/components/Card ";
-import  prisma  from "../../../prisma/Prisma";
+import  {prisma}  from "../../../prisma/Prisma";
 
 export default async function page() {
     async function getPosts() {

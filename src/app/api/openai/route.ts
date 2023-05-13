@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Configuration, OpenAIApi } from 'openai'
-import prisma  from "../../../../prisma/Prisma";
+import {prisma}  from "../../../../prisma/Prisma";
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
