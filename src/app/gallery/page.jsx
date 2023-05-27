@@ -6,7 +6,7 @@ export default async function page() {
         const res = await fetch('https://ai-image-generator-khxif.vercel.app/api/openai',{ cache:'no-store'})
         const posts  = await res.json()
         //console.log(posts.posts);
-        //return posts.posts
+        return posts.posts
         //const post = await prisma.user.findMany()
         //console.log(post);
         //return post;
