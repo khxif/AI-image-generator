@@ -27,7 +27,7 @@ export default function HomeBody() {
       setIsLoading(true)
       try {
         const { data } = await axios.post(
-          `${process.env.VERCEL_URL}/api/openai`,
+          `${process.env.URL}/api/openai`,
           {
             description: userInputs.description,
           },
@@ -54,7 +54,7 @@ export default function HomeBody() {
         e.preventDefault()
         try {
           const { data } = await axios.post(
-            `${process.env.VERCEL_URL}/api/sharepost`,
+            `${process.env.URL}/api/sharepost`,
             {
               title:userInputsCache.title,
               tag:userInputsCache.tag,
