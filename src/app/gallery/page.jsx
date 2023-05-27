@@ -3,13 +3,13 @@ import  {prisma}  from "../../../prisma/Prisma";
 
 export default async function page() {
     async function getPosts() {
-        //const res = await fetch('/api/openai')
-        //const posts  = await res.json()
+        const res = await fetch('https://ai-image-generator-khxif.vercel.app/api/openai',{ cache:'no-store'})
+        const posts  = await res.json()
         //console.log(posts.posts);
         //return posts.posts
-        const post = await prisma.user.findMany()
+        //const post = await prisma.user.findMany()
         //console.log(post);
-        return post;
+        //return post;
         
     } 
     const posts = await getPosts()
