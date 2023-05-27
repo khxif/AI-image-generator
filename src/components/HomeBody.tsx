@@ -27,7 +27,7 @@ export default function HomeBody() {
       setIsLoading(true)
       try {
         const { data } = await axios.post(
-          `${'http://localhost:3000' || 'https://ai-image-generator-khxif.vercel.app'}/api/openai`,
+          `https://ai-image-generator-khxif.vercel.app/api/openai`,
           {
             description: userInputs.description,
           },
@@ -54,7 +54,7 @@ export default function HomeBody() {
         e.preventDefault()
         try {
           const { data } = await axios.post(
-            `${'http://localhost:3000' || 'https://ai-image-generator-khxif.vercel.app'}/api/sharepost`,
+            `https://ai-image-generator-khxif.vercel.app/api/sharepost`,
             {
               title:userInputsCache.title,
               tag:userInputsCache.tag,
