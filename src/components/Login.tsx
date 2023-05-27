@@ -6,7 +6,7 @@ import {signIn} from 'next-auth/react'
 
 export default function Login() {
   return (
-    <div className='bg-black w-full h-screen flex flex-col justify-center items-center'>
+    <div className='bg-black w-full h-screen flex flex-col justify-center items-center px-2 text-center'>
       <Image 
       src={Logo}
       alt='logo'

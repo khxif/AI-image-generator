@@ -3,7 +3,7 @@ import  {prisma}  from "../../../prisma/Prisma";
 
 export default async function page() {
     async function getPosts() {
-        //const res = await fetch('http://localhost:3000/api/openai',{cache:'no-store'})
+        //const res = await fetch('http://localhost:3000/api/openai')
         //const posts  = await res.json()
         //console.log(posts.posts);
         //return posts.posts

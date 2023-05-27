@@ -5,7 +5,7 @@ import Provider from '@/components/Provider '
 import {getServerSession} from 'next-auth'
 import AuthProvider from '../components/AuthProvider'
 import Login from '@/components/Login '
-import { authOptions } from '../../pages/api/auth/[...nextauth]'
+import { authOptions } from './api/auth/[...nextauth]/route'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +19,7 @@ type Props = {
 }
 
 export default async function RootLayout({children}: Props) {
+
   const session = await getServerSession(authOptions)
   
   return (

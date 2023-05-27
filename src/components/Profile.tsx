@@ -11,6 +11,8 @@ export default function Profile() {
         <Image src={session?.user?.image!} 
         className='rounded-full w-14 h-14 cursor-pointer '
         onClick={() => signOut()}
+        width={56}
+        height={56}
         alt="profile-pic" />
     </div>
   )

@@ -7,6 +7,8 @@ export default function loading() {
         <Image
         src={Rolling}
         alt="loading..."
+        width={20}
+        height={20}
         />
     </div>
   )
